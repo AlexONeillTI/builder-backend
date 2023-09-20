@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors'); // Import the cors middleware
 
 const app = express();
-const PORT = 8001;
+const PORT = process.env.PORT || 8081;
 
 app.use(express.json());
 app.use(cors());
